@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="animate.min.css">
     <style>
-        
+        @media screen and (min-width: 321px) and (max-width: 768px) {
+            body {
+                font-size:80%; 
+            }
+        }
         .image-container {
             float: right;
             margin-left: 20px;
@@ -82,34 +86,30 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Mi Sitio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                    <li class="nav-item">
+   <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Mi Sitio</a>
+                <div id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-row justify-content-between">
+                        <li class="nav-item mx-2">
                             <a class="nav-link active" aria-current="page" href="consejos_seguridad.html">Consejos de seguridad</a>
-                          </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="proteccion_contraseñas.html">Proteccion de contraseñas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="seguridad_en_redes_social.html">Seguridad en redes sociales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="proteccion_contra_malware.html">Proteccion contra malware</a>
-              </li>
-              <li class="nav-item">
-                    <a class="nav-link" href="recursos.html">Recursos y enlaces utiles</a>
-                  </li>
-
-            </ul>
-          </div>
-        </div>
-      </nav>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="proteccion_contraseñas.html">Proteccion de contraseñas</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="seguridad_en_redes_social.html">Seguridad en redes sociales</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="proteccion_contra_malware.html">Proteccion contra malware</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="recursos.html">Recursos y enlaces utiles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
 
     <h1> 
         <br> ¿Como puedo protegerme contra malware?
@@ -159,7 +159,7 @@
         <div id="footer">
             <div class="navbar">
                     <a href="#home" onclick="alert('Esta pagina esta enfocada a informar acerca de las consecuencias de los malwares y como evitarlos')">Acerca de</a>
-                    <a href="#news" onclick="alert('Esta pagin forma parte de un practica :)')">Datos</a>
+                    <a href="#news" onclick="alert('Esta pagina forma parte de un practica :)')">Datos</a>
                     <a href="#contact" onclick="alert('Pagina realizada sin fines de lucros')">informacion</a>
             </div>
         </div>
